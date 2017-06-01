@@ -1,3 +1,27 @@
+# PID Steering Control for Self-driving car
+Udacity Self-Driving Car Engineer Nanodegree
+
+A proportional–integral–derivative controller (PID controller) controller continuously calculates an error value "e" as the difference between a desired setpoint and a measured process variable and applies a correction based on proportional, integral, and derivative terms.
+
+![pid-controller](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cc8ee5_pid/pid.png)
+
+* P term accounts for proportional values of the error. The magnitude of the contribution of the proportional term is given by the proportional gain constant Kp. Proportional gain results affects change in the output for a given change in the error. 
+* I term contributes with both the magnitude and duration of the error. The integral in this controller is the sum of errors over time. Integral term accelerates the process' movement towards the setpoint.  The integral term can be adjusted by multiplying the error by a constant Ki, called the integral gain constant.
+* D term is the slope of the error over time. The derivative contribution can be adjusted by multiplying the error by a constant Kd, called the derivative gain constant. Derivative action predicts system behavior and thus improves settling time and stability of the system
+
+For solving this project, I have started using the constants suggested on the lessons:
+* Kp = 0.2
+* Ki = 0.004
+* Kd = 3.0
+
+After several test, increasing and decresing constants and testing how each of the perfomed, I have decided to use the following values:
+* Kp = 0.1
+* Ki = 0.001
+* Kd = 1.0
+
+I have found that these generates a smoother driving in the simulator. There is a video in the assets folder.
+
+
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 

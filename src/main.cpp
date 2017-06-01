@@ -40,7 +40,7 @@ int main() {
 
 	// TODO: Initialize the pid variable.
 	
-	std::vector<double> params = {0.2, 0.004, 3.0};
+	std::vector<double> params = { 0.1, 0.001, 1.0 };
 	double Kp = params[0];
 	double Ki = params[1];
 	double Kd = params[2];
